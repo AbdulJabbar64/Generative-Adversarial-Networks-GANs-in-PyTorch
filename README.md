@@ -22,7 +22,7 @@ Since the outputs of the generator are images, it's not obvious how we can train
 * We generate a batch of images using the generator, pass the into the discriminator.
 * We calculate the loss by setting the target labels to 1 i.e. real. We do this because the generator's objective is to "fool" the discriminator.
 * We use the loss to perform gradient descent i.e. change the weights of the generator, so it gets better at generating real-like images to "fool" the discriminator.
-[Generator Training Video](https://github.com/AbdulJabbar64/Generative-Adversarial-Networks-GANs-in-PyTorch/blob/main/Images/gans_training.avi)
+[Generator Training Video](https://github.com/AbdulJabbar64/Generative-Adversarial-Networks-GANs-in-PyTorch/blob/main/Images/gans_training.mp4)
 
 
 https://user-images.githubusercontent.com/49620759/154310395-746dd44a-b191-40cd-9a3c-bfa4466daea0.mp4
