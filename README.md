@@ -16,3 +16,9 @@
 # Discriminator Training
 * Since the discriminator is a binary classification model, we can use the binary cross entropy loss function to quantify how well it is able to differentiate between real and generated images. 
 ![alt text](https://github.com/AbdulJabbar64/Generative-Adversarial-Networks-GANs-in-PyTorch/blob/main/Images/Discriminator.jpg)
+
+# Generator Training
+Since the outputs of the generator are images, it's not obvious how we can train the generator. This is where we employ a rather elegant trick, which is to use the discriminator as a part of the loss function. Here's how it works:
+* We generate a batch of images using the generator, pass the into the discriminator.
+* We calculate the loss by setting the target labels to 1 i.e. real. We do this because the generator's objective is to "fool" the discriminator.
+* We use the loss to perform gradient descent i.e. change the weights of the generator, so it gets better at generating real-like images to "fool" the discriminator.
